@@ -44,6 +44,7 @@ class CustomRNN:
             results.append(yi)
             h = h1    
         return torch.stack(results), h
+    
     def backward(self, output): 
         return None
         
